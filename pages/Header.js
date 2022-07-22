@@ -6,7 +6,7 @@ export default function Header() {
           background: white;
         }
       `}</style> */}
-      <h1>Develop, Preview, Ship, React, Next.js 🚀</h1>
+      <h1> Develop, Preview, Ship, React, Next.js 🚀 </h1>
     </div>
   );
 }
