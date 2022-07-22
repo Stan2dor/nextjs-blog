@@ -4,14 +4,14 @@ import styles from "../styles/layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
-const name = "Stan Tudor";
+const name = "Next.js";
 export const siteTitle = "Next.js Project Website";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        {/* <link rel='icon' href='/favicon.ico' /> */}
+        <link rel='icon' href='/favicon.ico' />
         <meta name='description' content='A personal website using Next.js' />
         <meta
           property='og:image'
@@ -27,10 +27,10 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src='/images/profile.jpeg'
+              src='/favicon.ico'
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={44}
+              width={44}
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -41,10 +41,10 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src='/images/profile.jpeg'
+                  src='/favicon.ico'
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={42}
+                  width={42}
                   alt={name}
                 />
               </a>

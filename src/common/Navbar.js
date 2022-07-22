@@ -23,7 +23,7 @@ export default function Navbar() {
             className='react'
             viewBox='0 0 20 20'
             fill='white'
-            src={logo}
+            src='/favicon.ico'
             alt='logo'
           />
 

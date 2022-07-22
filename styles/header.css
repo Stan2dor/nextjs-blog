@@ -1,0 +1,5 @@
+@media screen and (max-width: 760px) {
+  .layout_header__H1FPN span {
+    display: none;
+  }
+}

@@ -1,28 +1,36 @@
 import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
-
+import Link from "next/link";
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
+import Navbar from "../../src/common/Navbar";
 
 export default function Post({ postData }) {
   return (
-    <Layout>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
-      {postData.id}
-      <br />
-      <Date dateString={postData.date} />
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </Layout>
+    <>
+      <Navbar />
+      <Layout>
+        <Head>
+          <title>{postData.title}</title>
+        </Head>
+        <article>
+          <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+          <div className={utilStyles.lightText}>
+            <Date dateString={postData.date} />
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </article>
+        {postData.id}
+        <br />
+        {/* <Link href='/'>
+          <a>Back to home</a>
+        </Link> */}
+        {/* <br /> */}
+        <Date dateString={postData.date} />
+        <hr></hr>
+      </Layout>
+    </>
   );
 }
 

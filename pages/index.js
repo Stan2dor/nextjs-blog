@@ -1,8 +1,8 @@
 import Head from "next/head";
-// import Link from "next/link";
+import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-// import Date from "../components/date";
+import Date from "../components/date";
 import Navbar from "../src/common/Navbar";
 import Header from "./Header";
 import Names from "./Names";
@@ -38,15 +38,17 @@ export default function HomePage({ allPostsData }) {
           </section>
           <section
             className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-            <h2 className={utilStyles.headingLg}>Blog</h2>
+            <h2 className={utilStyles.headingLg}>My Blog</h2>
             <ul className={utilStyles.list}>
               {allPostsData.map(({ id, date, title }) => (
                 <li className={utilStyles.listItem} key={id}>
-                  {title}
+                  <Link href={`/posts/${id}`}>
+                    <a>{title}</a>
+                  </Link>
                   <br />
-                  {id}
-                  <br />
-                  {date}
+                  <small className={utilStyles.lightText}>
+                    <Date dateString={date} />
+                  </small>
                 </li>
               ))}
             </ul>
