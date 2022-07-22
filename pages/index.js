@@ -26,36 +26,38 @@ import { getSortedPostsData } from "../lib/posts";
 
 export default function HomePage({ allPostsData }) {
   return (
-    <Layout home>
-      <div>
-        <Head>
-          <title>{siteTitle}</title>
-          {/* <link rel='icon' href='/favicon.ico' /> */}
-        </Head>
-        <section className={utilStyles.headingMd}>
-          <Navbar />
-          <Header />
-        </section>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h2 className={utilStyles.headingLg}>Blog</h2>
-          <ul className={utilStyles.list}>
-            {allPostsData.map(({ id, date, title }) => (
-              <li className={utilStyles.listItem} key={id}>
-                {title}
-                <br />
-                {id}
-                <br />
-                {date}
-              </li>
-            ))}
-          </ul>
-        </section>
-        <Names />
-        <Alert />
-        {/* <Projects /> */}
-        {/* <Button /> */}
-      </div>
-    </Layout>
+    <>
+      <Navbar />
+      <Layout home>
+        <div>
+          <Head>
+            <title>{siteTitle}</title>
+          </Head>
+          <section className={utilStyles.headingMd}>
+            <Header />
+          </section>
+          <section
+            className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+            <h2 className={utilStyles.headingLg}>Blog</h2>
+            <ul className={utilStyles.list}>
+              {allPostsData.map(({ id, date, title }) => (
+                <li className={utilStyles.listItem} key={id}>
+                  {title}
+                  <br />
+                  {id}
+                  <br />
+                  {date}
+                </li>
+              ))}
+            </ul>
+          </section>
+          <Names />
+          <Alert />
+          {/* <Projects /> */}
+          {/* <Button /> */}
+        </div>
+      </Layout>
+    </>
   );
 }
 export async function getStaticProps() {

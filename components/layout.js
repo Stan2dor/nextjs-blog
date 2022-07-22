@@ -11,7 +11,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel='icon' href='/favicon.ico' />
+        {/* <link rel='icon' href='/favicon.ico' /> */}
         <meta name='description' content='A personal website using Next.js' />
         <meta
           property='og:image'

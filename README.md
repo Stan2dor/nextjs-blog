@@ -1,2 +1,4 @@
-git remote add origin https://github.com/Stan2dor/nextjs-blog.git
-git branch -M "main"
+Develop, Preview, Ship, React, Next.js 🚀
+
+Project Link:
+https://nextjs-blog-mvrcwgsh1-stan2dor.vercel.app/
