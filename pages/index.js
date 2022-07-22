@@ -9,7 +9,7 @@ import Names from "./Names";
 import Alert from "../components/Alert";
 
 import { getSortedPostsData } from "../lib/posts";
-import { Projects } from "./Projects";
+// import { Projects } from "./Projects";
 
 // import Button from "./LikeButton";
 
@@ -52,7 +52,7 @@ export default function HomePage({ allPostsData }) {
         </section>
         <Names />
         <Alert />
-        <Projects />
+        {/* <Projects /> */}
         {/* <Button /> */}
       </div>
     </Layout>
