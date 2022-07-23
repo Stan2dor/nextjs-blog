@@ -9,6 +9,7 @@ import Names from "./Names";
 import Alert from "../components/Alert";
 
 import { getSortedPostsData } from "../lib/posts";
+import Footer from "../src/common/Footer";
 // import { Projects } from "./Projects";
 
 // import Button from "./LikeButton";
@@ -58,6 +59,7 @@ export default function HomePage({ allPostsData }) {
           {/* <Projects /> */}
           {/* <Button /> */}
         </div>
+        <Footer />
       </Layout>
     </>
   );

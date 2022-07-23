@@ -1,3 +1,4 @@
+import Form from "../src/common/Form";
 import Link from "next/link";
 import Navbar from "../src/common/Navbar";
 
@@ -7,6 +8,7 @@ function ContactUs() {
       <Navbar />
       <div>
         <h1>Contact us </h1>
+        <Form />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

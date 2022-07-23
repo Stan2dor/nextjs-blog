@@ -6,7 +6,7 @@
   /* font-size: calc(14px + 0.5vmin); */
 }
 .kompweb {
-  margin: 10px 20px;
+  margin: 10px 0;
   padding: 0 20px;
 }
 .kompweb a {
@@ -17,7 +17,7 @@
   text-transform: uppercase;
 }
 .kompweb a:hover {
-  border-bottom: 4px solid #03b7e9;
+  /* border-bottom: 4px solid #03b7e9; */
   /* color: #ffffff; */
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -26,6 +26,7 @@
   transition: all 200ms ease;
 }
 .kompweb p {
+  margin: 0;
   letter-spacing: 0.2em;
   font-size: calc(12px + 0.5vmin);
 }

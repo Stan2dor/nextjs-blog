@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div>
+    <div className='container'>
       {/* <style global jsx>{`
         body {
           background: white;
